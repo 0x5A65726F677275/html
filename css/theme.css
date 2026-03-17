@@ -3104,6 +3104,15 @@ textarea.form-control-lg {
   flex-grow: 1;
   align-items: center; }
 
+/* Ensure mobile navbar menu uses dark background when expanded */
+@media (max-width: 991.98px) {
+  .navbar-dark.bg-black,
+  .navbar-dark.bg-black .navbar-collapse,
+  .navbar-dark.bg-black .navbar-collapse.show {
+    background-color: #000 !important;
+  }
+}
+
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
@@ -8975,6 +8984,24 @@ img {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #111; }
+
+/* Compact navbar on small screens */
+@media (max-width: 575.98px) {
+  .navbar {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .navbar-nav .nav-link.fs-5 {
+    font-size: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
 
 .display-big {
   font-size: 7rem; }
