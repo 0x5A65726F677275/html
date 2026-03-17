@@ -6230,6 +6230,9 @@ textarea.form-control-lg {
 .ms-5 {
   margin-left: 3rem !important; }
 
+.ms-5 {
+  margin-left: 3rem !important; }
+
 .ms-auto {
   margin-left: auto !important; }
 
@@ -8985,7 +8988,7 @@ img {
   padding-bottom: 12px;
   background-color: #111; }
 
-/* Compact navbar & stacked portrait on small screens */
+/* Compact navbar on small screens */
 @media (max-width: 575.98px) {
   .navbar {
     padding-top: 12px;
@@ -8996,18 +8999,17 @@ img {
     font-size: 1.1rem;
   }
 
-  .navbar-nav .nav-link.fs-5 {
-    font-size: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+  /* Make header menu more like footer links on mobile */
+  .navbar-nav {
+    align-items: flex-start;
   }
 
-  .stacked-portrait {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7rem;
-    margin-bottom: 0.25em!important;
-    display: block;
+  .navbar-nav .nav-link.fs-5 {
+    font-size: 0.9rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
