@@ -8985,7 +8985,7 @@ img {
   padding-bottom: 12px;
   background-color: #111; }
 
-/* Compact navbar on small screens */
+/* Compact navbar & stacked portrait on small screens */
 @media (max-width: 575.98px) {
   .navbar {
     padding-top: 12px;
@@ -9000,6 +9000,14 @@ img {
     font-size: 1rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+  }
+
+  .stacked-portrait {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7rem;
+    margin-bottom: 0.25em!important;
+    display: block;
   }
 }
 
